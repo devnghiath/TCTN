@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="vn.thn.groupbase.tctn.views.activity.TCTNActivity">
 
-
-
+    <include
+        android:id="@+id/bottom_navi"
+        layout="@layout/view_bottom_bar"/>
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:clickable="false"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navi"
+        android:layout_below="@+id/top_navi">
+    </RelativeLayout>
 </RelativeLayout>
