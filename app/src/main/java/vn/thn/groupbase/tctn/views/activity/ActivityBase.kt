@@ -1,5 +1,6 @@
 package vn.thn.groupbase.tctn.views.activity
 
+import android.support.design.widget.BottomNavigationView
 import vn.thn.groupbase.lib.views.activity.GBActivityCommon
 import vn.thn.groupbase.tctn.R
 
@@ -11,6 +12,10 @@ abstract class ActivityBase : GBActivityCommon() {
         return R.layout.activity_base
     }
 
+    override fun initCommon() {
+        findViewById<BottomNavigationView>(R.id.bottom_navi)
+
+    }
     override fun contentId(): Int {
         return R.id.content
     }

@@ -2,6 +2,8 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="margin_10">10dp</dimen>
     <dimen name="padding_15">15dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
     <dimen name="view_60dp">60dp</dimen>
     <dimen name="view_30dp">30dp</dimen>
+    <dimen name="view_20dp">20dp</dimen>
 </resources>

@@ -6,9 +6,6 @@
     android:layout_height="match_parent"
     tools:context="vn.thn.groupbase.tctn.views.activity.TCTNActivity">
 
-    <include
-        android:id="@+id/bottom_navi"
-        layout="@layout/view_bottom_bar"/>
     <RelativeLayout
         android:layout_alignParentTop="true"
         android:clickable="false"
@@ -18,4 +15,7 @@
         android:layout_above="@+id/bottom_navi"
         android:layout_below="@+id/top_navi">
     </RelativeLayout>
+    <include
+        android:id="@+id/bottom_navi"
+        layout="@layout/view_bottom_bar"/>
 </RelativeLayout>

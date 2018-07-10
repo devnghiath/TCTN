@@ -1,5 +1,6 @@
 package vn.thn.groupbase.tctn.views.fragment
 
+import android.support.v4.app.FragmentTransaction
 import vn.thn.groupbase.tctn.R
 
 /**
@@ -18,7 +19,16 @@ class NotificationFragment: FragmentBase() {
 
     }
 
+    override fun getTitle(): String? {
+        return "Thông báo"
+    }
     override fun fragmentName(): String? {
         return "NotificationFragment"
+    }
+    override fun isShowButtonBack():Boolean {
+        return false
+    }
+    override fun setAnimationCustom(animationCustom: FragmentTransaction) {
+
     }
 }
