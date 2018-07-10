@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector_white"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_10">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_cell"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ico_my" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:text="Thông tin tài khoản"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector_white"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_10">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_cell"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ico_search_paid" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:text="Thông tin ứng dụng"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_16" />
+    </LinearLayout>
+
+
+</LinearLayout>

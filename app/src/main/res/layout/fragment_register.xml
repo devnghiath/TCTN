@@ -17,14 +17,14 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/height_cell"
             android:adjustViewBounds="true"
-            android:src="@drawable/ico_date_plus"/>
+            android:src="@drawable/ico_add_new"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margin_10"
             android:textSize="@dimen/text_16"
-            android:text="Xem ngày ghi chỉ số nước"
+            android:text="Đăng ký định mức"
             android:textColor="@color/txt_black" />
     </LinearLayout>
 
@@ -41,14 +41,14 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/height_cell"
             android:adjustViewBounds="true"
-            android:src="@drawable/ico_date_ok"/>
+            android:src="@drawable/ico_add_clock"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margin_10"
             android:textSize="@dimen/text_16"
-            android:text="Xem ngày thu tiền nước"
+            android:text="Đăng ký hồ sơ gắn mới đồng hồ nước"
             android:textColor="@color/txt_black" />
     </LinearLayout>
     <LinearLayout
@@ -64,14 +64,14 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/height_cell"
             android:adjustViewBounds="true"
-            android:src="@drawable/ico_chart"/>
+            android:src="@drawable/ico_add_move"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margin_10"
             android:textSize="@dimen/text_16"
-            android:text="Xem tiến độ giải quyết hồ sơ"
+            android:text="Đăng ký hồ sơ nâng dời đồng hồ nước"
             android:textColor="@color/txt_black" />
     </LinearLayout>
     <LinearLayout
@@ -87,37 +87,15 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/height_cell"
             android:adjustViewBounds="true"
-            android:src="@drawable/ico_report_customer"/>
+            android:src="@drawable/ico_warning"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margin_10"
             android:textSize="@dimen/text_16"
-            android:text="Xem tiến độ giải quyến đơn thư khách hàng"
+            android:text="Cảnh báo thông tin chất lượng nước kém chất lượng trên địa bàn"
             android:textColor="@color/txt_black" />
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:background="@drawable/button_selector_white"
-        android:clickable="true"
-        android:orientation="horizontal"
-        android:padding="@dimen/margin_10">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/height_cell"
-            android:adjustViewBounds="true"
-            android:src="@drawable/ico_msg"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/margin_10"
-            android:textSize="@dimen/text_16"
-            android:text="Tin nhắn báo tin hóa đơn chưa thanh toán"
-            android:textColor="@color/txt_black" />
-    </LinearLayout>
 </LinearLayout>

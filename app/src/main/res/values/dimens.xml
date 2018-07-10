@@ -3,7 +3,9 @@
     <dimen name="margin_10">10dp</dimen>
     <dimen name="padding_15">15dp</dimen>
     <dimen name="padding_5">5dp</dimen>
-    <dimen name="view_60dp">60dp</dimen>
+    <dimen name="height_cell">45dp</dimen>
+    <dimen name="view_50dp">50dp</dimen>
     <dimen name="view_30dp">30dp</dimen>
     <dimen name="view_20dp">20dp</dimen>
+    <dimen name="text_16">16sp</dimen>
 </resources>
