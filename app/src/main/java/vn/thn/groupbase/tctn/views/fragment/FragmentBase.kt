@@ -4,6 +4,7 @@ import android.support.v4.app.FragmentTransaction
 import android.view.View
 import android.widget.TextView
 import vn.thn.groupbase.lib.views.fragment.GBCommonFragment
+import vn.thn.groupbase.tctn.BuildConfig
 import vn.thn.groupbase.tctn.R
 
 /**
@@ -52,5 +53,7 @@ abstract class FragmentBase : GBCommonFragment() {
     }
 
     abstract fun getTitle(): String?
-
+    override fun isDebugMode(): Boolean {
+        return BuildConfig.DEBUG
+    }
 }

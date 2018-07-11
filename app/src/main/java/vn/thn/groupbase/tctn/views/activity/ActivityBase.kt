@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import vn.thn.groupbase.lib.views.activity.GBActivityCommon
+import vn.thn.groupbase.tctn.BuildConfig
 import vn.thn.groupbase.tctn.R
 import vn.thn.groupbase.tctn.views.fragment.MyFragment
 import vn.thn.groupbase.tctn.views.fragment.NotificationFragment
@@ -27,22 +28,31 @@ abstract class ActivityBase : GBActivityCommon() {
         findViewById<View>(R.id.button_info).setOnClickListener {
             tabIndex = 0
             updateStateButtonBar()
-            viewManager.pushViewToRoot(NotificationFragment::class)
+            if ( !(viewManager.getViewCurrent() is NotificationFragment) ) {
+                viewManager.pushViewToRoot(NotificationFragment::class)
+            }
         }
         findViewById<View>(R.id.button_search).setOnClickListener {
             tabIndex = 1
             updateStateButtonBar()
-            viewManager.pushViewToRoot(SearchFragment::class)
+            if ( !(viewManager.getViewCurrent() is SearchFragment) ) {
+                viewManager.pushViewToRoot(SearchFragment::class)
+            }
         }
         findViewById<View>(R.id.button_register).setOnClickListener {
             tabIndex = 2
             updateStateButtonBar()
-            viewManager.pushViewToRoot(RegisterFragment::class)
+            if ( !(viewManager.getViewCurrent() is RegisterFragment) ) {
+                viewManager.pushViewToRoot(RegisterFragment::class)
+            }
         }
         findViewById<View>(R.id.button_me).setOnClickListener {
             tabIndex = 3
             updateStateButtonBar()
-            viewManager.pushViewToRoot(MyFragment::class)
+            if ( !(viewManager.getViewCurrent() is MyFragment) ) {
+                viewManager.pushViewToRoot(MyFragment::class)
+            }
+
         }
         updateStateButtonBar()
     }
@@ -50,7 +60,9 @@ abstract class ActivityBase : GBActivityCommon() {
     override fun contentId(): Int {
         return R.id.content
     }
-
+    override fun isDebugMode(): Boolean {
+        return BuildConfig.DEBUG
+    }
     private fun updateStateButtonBar() {
         findViewById<TextView>(R.id.button_info_text).setTextColor(if (tabIndex == 0) ContextCompat.getColor(this, R.color.txt_black) else ContextCompat.getColor(this, R.color.stroke_color))
         findViewById<ImageView>(R.id.button_info_icon).setImageResource(if (tabIndex == 0) R.drawable.ico_noti else R.drawable.ico_noti_un)
