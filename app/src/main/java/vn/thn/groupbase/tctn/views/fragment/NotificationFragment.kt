@@ -1,6 +1,7 @@
 package vn.thn.groupbase.tctn.views.fragment
 
 import android.support.v4.app.FragmentTransaction
+import android.view.View
 import vn.thn.groupbase.tctn.R
 
 /**
@@ -16,7 +17,9 @@ class NotificationFragment: FragmentBase() {
     }
 
     override fun initView() {
-
+        findViewById<View>(R.id.btn_date_write)!!.setOnClickListener {
+            viewManager.pushView(DateWriteFragment::class)
+        }
     }
 
     override fun getTitle(): String? {

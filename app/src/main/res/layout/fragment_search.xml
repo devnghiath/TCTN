@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/height_cell"
             android:adjustViewBounds="true"
-            android:src="@drawable/ico_search_history" />
+            android:src="@drawable/ico_search_history" android:contentDescription="TODO"/>
 
         <TextView
             android:layout_width="wrap_content"
